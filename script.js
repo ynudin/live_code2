@@ -6,10 +6,23 @@
 // [5]             // [10]
 // [1,3]			//[6,2]
 
+// cara 1
 
 function reverseandtimes(input) {
-  const inputs = input.split('').map(Number);
-  const output = inputs.map(num => num*2);
+  const output = input.reverse().map(num => num*2);
 
-  return output.join('')
+  return output;
 }
+
+const input = [1, 4, 6, 7]
+const output = reverseandtimes(input);
+console.log(output);
+
+// cara 2
+
+const number = [1,4,6,7];
+const reversed = number.reverse();
+const time = reversed.map(num => num*2);
+console.log(time)
+
+
